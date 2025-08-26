@@ -29,7 +29,7 @@ const letrasMaisculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
 const numeros = '0123456789';
 const simbolos = '@#!=+8?%';
-geraSenha()
+geraSenha();
 
 function geraSenha(){
     let senha = '';

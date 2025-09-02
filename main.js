@@ -29,7 +29,6 @@ function aumentaTamanho() {
     geraSenha();
 }
 
-
 for (i = 0; i < checkbox.length; i++) {
     checkbox[i].onclick = geraSenha;
 }
@@ -62,4 +61,13 @@ function geraSenha() {
         senha = senha + alfabeto[numeroAleatorio];
     }
     campoSenha.value = senha;
+    classificaSenha();
+}
+
+function classificaSenha(){
+forcaSenha.classList.remove ('fraca','media','forte');
+if (tamanhoSenha>11){
+    forcaSenha.classList.add('forte');
+}
+
 }
